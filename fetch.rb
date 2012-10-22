@@ -5,11 +5,10 @@ require "sosowa"
 require "pp"
 
 indexes = []
-s = Sosowa.get :log => 127
-127.times do |n|
+s = Sosowa.get
+while s = s.next
   puts "fetch #{n}"
   indexes << s.to_a
-  s = s.next
 end
 indexes.flatten!
 pp indexes.size
