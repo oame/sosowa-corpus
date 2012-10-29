@@ -13,7 +13,6 @@ namespace :corpus do
     begin
       puts "Indexing subject of #{s.log}"
       indexes << s.to_a
-      break
     end while s = s.next
     indexes.flatten!
     puts "Indexed #{indexes.size} novels"
