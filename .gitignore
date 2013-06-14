@@ -1,2 +1,6 @@
+# OS specific
 .DS_Store
+Thumb.db
+
+# Datadir
 /data/*
